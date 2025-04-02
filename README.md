@@ -1,75 +1,17 @@
-# Nuxt Minimal Starter
+# 📌 Master Front End XV - Vue Laboratorio
+Aplicar las técnicas vistas en la parte práctica de Vue a una aplicación, dejando espacio para explorar otros frameworks si se desea.
+Crear una aplicación web con **Nuxt** para administrar una lista de tareas (**ToDo list**).
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+📌 **Interfaz de usuario**
+- Un campo de texto donde los usuarios puedan ingresar el nombre de una tarea.
+- Un botón **"Agregar"** que añada la tarea ingresada a la lista.
+- Una lista de tareas donde cada una tenga:
+  - Un botón para marcarla como **completada**, que pueda activarse o desactivarse.
+  - Un botón **"Eliminar"** para removerla de la lista.
 
-## Setup
+📌 **Gestión de estado**
+- La lista de tareas debe almacenarse en el estado de la aplicación utilizando **Pinia**.
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+💾 **Persistencia de datos**
+- Usar el **plugin de Pinia** para mantener las tareas almacenadas incluso al recargar la página:  
+  [pinia-plugin-persistedstate](https://github.com/prazdevs/pinia-plugin-persistedstate)
